@@ -251,3 +251,10 @@
 - target: garden/oceane
   url: https://git.sr.ht/~oceane/pks
   format: org
+
+- target: garden/ajhalili2006
+  url: https://git.vern.cc/ajhalili2006/digital-garden
+  edit: https://git.vern.cc/ajhalili2006/digital-garden/_edit/main/{path}
+  web: https://git.vern.cc/ajhalili2006/digital-garden/src/branch/main/{path}
+  protocol: git
+  format: foam
