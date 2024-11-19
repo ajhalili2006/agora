@@ -1,43 +1,47 @@
-# Welcome to the Agora!
-This is an [Agora](https://flancia.org/agora). You can find a reference implementation live at <https://anagora.org/>.
-This Agora's architecture has several components distributed over three git repositories:
+# Welcome to the [[Agora of Flancia]]!
 
-- The *Agora root repository*, which you are browsing: <https://github.com/flancian/agora>. 
-  - This root repository contains a high level definition of the Agora as expressed by the list of digital gardens to be integrated (`sources.yaml`) and the contract agreed upon by the community (`CONTRACT.md`).
-- The *Agora Server*: <https://github.com/flancian/agora-server>.
-  - Which contains a reference Python / Flask web app that integrates and serves content. It is live at <https://anagora.org>.
-- The *Agora Bridge*: <https://github.com/flancian/agora-bridge>.
-  - Which contains a set of processes to retrieve content as volunteered by users.
+This *[Agora](https://flancia.org/agora)* is a [[Free]] [[Knowledge]] [[Commons]] built by people for the benefit of all beings.
 
-# Wait, what's an Agora again?
+Which people, you ask? 
 
-An [Agora](https://anagora.org/wiki/Agora) is a distributed, goal-oriented social network operating on a cooperatively built and maintained knowledge graph. The implementation you are currently looking at tries to assemble such a graph out of a collection of [digital gardens](flancia.org/go/garden), but other data sources are coming.
+In the case of this particular Agora: us [[Flancians]] -- and our [[friends]]!
 
-You can view the Agora at <https://anagora.org>. For how to write to it: if you take personal digital notes with some system such as [foam](https://anagora.org/foam) or [obsidian](https://anagora.org/obsidian), you are most of the way there; all you need to do is share them with the Agora (see "join" above). If you don't, but you would like to, please refer to [agora client](https://anagora.org/agora-join) or reach out!
+# Navigating
 
-# To join
+A quick tour of the Agora will hopefully communicate the intentions of the project better than many words of introduction.
 
-If you would like to join the reference Agora described in this particular repository, please send a PR adding your garden to `sources.yaml` or reach out to [flancian](https://anagora.org/flancian) or a member of [Flancia Collective](https://anagora.org/flancia-collective) with a pointer to your repository (or just your writing) and your choice of [username](https://anagora.org/users). 
+- See the list of all [[Nodes]].
+  - A <strong>Node</strong> is a set of resources (mostly text notes and images) that are relevant for a query or location. 
+- See the [[Users]] who contributed resources to this Agora so far.
+  - A <strong>User</strong> is anyone who has contributed resources to the Agora Commons, either as part of a repository or individually through social media.
+- See node [[Index]] for the community-maintained index of this Agora, which is richer than this one, and will be embedded or "pulled" for you below.
+- See special node [[Random]] for a random node out of the many thousands gathered so far. Warning: can be addictive :).
 
-After being integrated, your repository will appear live at <https://anagora.org/@username> and supported notes and other resources will be surfaced in the Agora in relevant nodes; this means that if you volunteer a note named ```foo.md```, it will show up in node <https://anagora.org/foo> together with all similarly named notes by other Agora users.
+# Joining
 
-# To run
+This <strong>Agora</strong> is a bit different from most other sites around the internet in that joining is a **two step process** that begins somewhere else.
 
-To run the reference Agora: 
+In a nutshell, it is a two step process: 
+- First you take notes/write/make posts in the editor(s) or platform(s) of your choice.
+- Then you tell an Agora that you'd like to contribute those resources.
 
-- Clone all three repositories described above (ideally in the $HOME directory of a dedicated user; this is not strictly needed, but scripts might assume this).
-- Install Python requirements in each of `agora-server` and `agora-bridge`:
-```
-python3 -m venv venv
-. venv/bin/activate
-pip3 install -r requirements.txt
-```
-- In `agora-bridge`: run `./run-dev.sh` to start updating repositories defined in `sources.yaml`.
-- In `agora-server`: run `./run-dev.sh` to start the dev web interface; or refer to <https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04> for instructions on how to set up the Agora as a system service on top of uwsgi (see `prod.ini`) and nginx.
+## Contributing notes and free form writing
 
-Of course you are also free to run your own Agora! To do this, just run the bridge against a local `sources.yaml` file -- or fork the root repository and adjust as wished. As usual please reach out if you need a hand with anything :)
+You can write to this Agora by taking notes using a [[personal knowledge management]] system like [[Obsidian]], [[Logseq]] or [[SilverBullet]], storing them in a repository, and telling us about it by writing to <signup@anagora.org> or reaching out over any of the other supported [[Agora channels]].
 
-# Contract
-***If you contribute directly to an Agora you are assumed to be in agreement with its then current contract.*** 
+If you are "tech-savvy" (in this particular way) you can send a [[pull request]] adding your [[git]] repository to this Agora's [[sources.yaml]] specifying the username of your choice. <strong>If you can't make this work or even if you don't know what any of that means</strong> please [[reach out]] if interested so we can try to support you through the process :)
 
-Please refer to the Agora's [contract](https://anagora.org/contract), in particular as posted by the system account @agora (which is binding for all users).
+## Posting from social media
+
+You can write to this Agora straight from the [[Fediverse]]! To do so, follow the [[Agora Bot]] in a supported platform.
+
+- If you are in Mastodon/ActivityPub, you can follow <https://botsin.space/@agora>.
+- If you are in [[Bluesky]], you can do the same with https://anagora.bsky.social.
+
+'Interacting' here means writing posts containing at least one [[wikilink]], or opting in to #hashtag handling. Your posts will be linked and optionally cross-posted in text format to the matching Agora location.
+
+## For more…
+
+- See [[Agora architecture]] for details on how the Agora works and instructions to run your own.
+- See [[Agora chapter]] for a ~20 page description of the vision behind the Agora and what we have accomplished so far, being the draft of a book chapter published in 2023.
+- Please [[reach out]] if you need anything, enjoy the Agora, and have a great day! 🍮
