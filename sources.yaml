@@ -149,6 +149,12 @@
 - format: quartz
   target: garden/darlim
   url: https://github.com/hdarlim/quartz
+- format: foam
+  protocol: git
+  support: https://ko-fi.com/bunnynabbit
+  target: garden/bunnynabbit
+  url: https://github.com/BunnyNabbit/Spacious-nexus.git
+  web: https://notes.bunnynabbit.com/{slug}
 - format: obsidian
   target: garden/protopian
   url: https://git.anagora.org/ProtopianFox/Agora-Garden.git
