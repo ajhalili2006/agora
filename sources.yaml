@@ -226,3 +226,11 @@
   target: garden/jennaalexja
   url: https://git.anagora.org/jennaalexja/garden
   web: https://git.anagora.org/jennaalexja/garden
+- format: markdown
+  target: garden/burup
+  url: https://git.anagora.org/burup/garden
+  web: https://git.anagora.org/burup/garden
+- format: markdown
+  target: garden/stapelberg
+  url: https://git.anagora.org/stapelberg/garden
+  web: https://git.anagora.org/stapelberg/garden
