@@ -240,3 +240,7 @@
   target: garden/stapelberg
   url: https://git.anagora.org/stapelberg/garden
   web: https://git.anagora.org/stapelberg/garden
+- format: foam
+  target: garden/goldfishlaser
+  url: https://github.com/goldfishlaser/dev-notes
+  web: https://goldfishlaser.github.io/dev-notes/
